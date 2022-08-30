@@ -1,6 +1,6 @@
 /*====================== GOOGLE FONTS ======================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+html,body{height:100%;}
 body{background: #eee;}
 
 .animate{
@@ -18,6 +18,25 @@ body{background: #eee;}
 .header_icon-bar{display: block; float: right; padding: 20px; display: none;}
 .header_icon-bar span{display: block; height: 3px; width: 30px; background: #fff; margin-bottom: 5px;}
 
+.cover{height: 70%; border: 1px solid red;
+  /*background-image: url("https://source.unsplash.com/category/nature");*/
+  background-image: url("https://github.com/lucaboffo/My-Portfolio/blob/master/img/home_wallpaper.jpg");
+  background-size: cover; 
+  -o-backround-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+}
+
+.cover_caption{
+  display: table;
+  height: 100%;
+  width:100%;
+}
+.cover_caption_copy{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
 
 /*--------------------------
 Tablet
