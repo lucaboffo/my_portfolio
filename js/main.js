@@ -1,7 +1,7 @@
 //Trigger header_menu
 $(document).ready(function(){
-    $(".header_icon-bar").click(function(e){
-        $(".header_menu").toggleClass('is-open');
+    $(".header__icon-bar").click(function(e){
+        $(".header__menu").toggleClass('is-open');
         e.preventDefault();
     })
 });

@@ -15,18 +15,20 @@ General
 
 .button{display: inline-block; background: #fff; color: #000; padding: 15px 30px; border-radius: 3px; text-decoration: none;}
 p{line-height: 22px;}
+a{color: #16dd94;}
+a:hover{color: #1af3a4;}
 /*--------------------------
 Header
 ----------------------------*/
 .header{background: #333;}
-.header_logo{color: #fff; float: left; display: block; padding: 15px;}
-.header_menu{float: right; margin: 0; padding: 0;}
-.header_menu_item{display: inline-block;}
-.header_menu_item a{color: #fff; display: block; padding: 15px;}
-.header_menu_item a:hover{background: #000;}
+.header__logo{color: #fff; float: left; display: block; padding: 15px; text-decoration: none;}
+.header__menu{float: right; margin: 0; padding: 0;}
+.header__menu__item{display: inline-block;}
+.header__menu__item a{color: #fff; display: block; padding: 15px; text-decoration: none;}
+.header__menu__item a:hover{background: #000;}
 
-.header_icon-bar{display: block; float: right; padding: 20px; display: none;}
-.header_icon-bar span{display: block; height: 3px; width: 30px; background: #fff; margin-bottom: 5px;}
+.header__icon-bar{display: block; float: right; padding: 20px; display: none;}
+.header__icon-bar span{display: block; height: 3px; width: 30px; background: #fff; margin-bottom: 5px;}
 
 
 /*--------------------------
@@ -42,35 +44,51 @@ Cover
   background-position: center center;
   position: relative;
 }
-.cover_filter{background: #000; width: 100%; height: 100%; position: absolute; z-index: 0; opacity: 0.5;}
-.cover_caption{display: table; height: 100%; width:100%; position: relative; z-index: 1; padding: 0 20px;}
-.cover_caption_copy{display: table-cell; vertical-align: middle; text-align: center; color: #fff;}
+.cover__filter{background: #000; width: 100%; height: 100%; position: absolute; z-index: 0; opacity: 0.5;}
+.cover__caption{display: table; height: 100%; width:100%; position: relative; z-index: 1; padding: 0 20px;}
+.cover__caption__copy{display: table-cell; vertical-align: middle; text-align: center; color: #fff;}
 
+.cover--single{height: 50%;}
+.cover--single h1{font-size: 42px;}
 
 /*--------------------------
 Cards
 ----------------------------*/
 .cards{max-width: 1200px; margin: 40px auto;}
 .card{width: 30%; margin: 1.5%; background: #fff; float: left;}
-.card_image{width: 100%; height: auto;}
-.card_copy{padding: 5px 20px;}
-.card_copy h3{margin-bottom: 0;}
+.card__image{width: 100%; height: auto;}
+.card__copy{padding: 5px 20px;}
+.card__copy h3{margin-bottom: 0;}
 
 
 /*--------------------------
 Banner
 ----------------------------*/
 .banner{background: #fff; height: 50%;}
-.banner_image{width: 30%; float: left; height: 100%;
+.banner__image{width: 30%; float: left; height: 100%;
   background-image: url("https://source.unsplash.com/category/tecnology/400x400");
   background-size: cover; 
   -o-backround-size: cover;
   -moz-background-size: cover;
   background-position: center center;}
-.banner_copy{width: 70%; float: left; height: 100%; display:table;}
-.banner_copy_text{display: table-cell; vertical-align:middle; padding: 30px;}
-.banner_copy_text h3{font-size: 36px; margin-bottom: 0;}
-.banner_copy_text h4{font-size: 22px; margin: 5px 0;}
+.banner__copy{width: 70%; float: left; height: 100%; display:table;}
+.banner__copy__text{display: table-cell; vertical-align:middle; padding: 30px;}
+.banner__copy__text h3{font-size: 36px; margin-bottom: 0;}
+.banner__copy__text h4{font-size: 22px; margin: 5px 0;}
+
+
+/*--------------------------
+Footer
+----------------------------*/
+.footer{background: #333; padding: 30px; color: #fff; margin-top: 40px;}
+
+
+/*--------------------------
+Single
+----------------------------*/
+.single__copy{max-width: 800px; margin: 0px auto; margin-top: -60px; background: #fff; padding: 20px 40px; position: relative; z-index: 1;}
+.single__copy__meta{font-weight: bold; font-size: 18px; font-style: italic;}
+.single__copy__title{font-size: 32px;}
 
 
 /*--------------------------
@@ -78,6 +96,9 @@ Tablet
 ----------------------------*/
 @media (max-width: 998px){
 
+  /*Banner*/
+  .banner__image,
+  .banner__copy{width: 50%; height: 100%;}
 }
 
 
@@ -85,24 +106,26 @@ Tablet
 Smartphone
 ----------------------------*/
 @media (max-width: 767px){
+
+  /*Header*/
   .header{position: fixed; z-index: 100; width: 100%}
-  .header_icon-bar{display: block;}
+  .header__icon-bar{display: block;}
   
-  .header_menu{width: 100%; height: 0px; overflow: hidden;}
-  .header_menu_item{display: block;}
+  .header__menu{width: 100%; height: 0px; overflow: hidden;}
+  .header__menu__item{display: block;}
   .is-open{height: 250px; overflow: auto;}
 
-/*Cover*/
+  /*Cover*/
   .cover{height:100%;}
 
-/*Cards*/
+  /*Cards*/
   .card{width: 90%; margin: 5%;}
 
-/*Banner*/
-.banner{height: 100%;}
+  /*Banner*/
+  .banner{height: 100%;}
 
-.banner_image,
-  .banner_copy{width: 100%; height: 50%;}
+  .banner__image,
+  .banner__copy{width: 100%; height: 50%;}
 }
 
 .clearfix:after {
