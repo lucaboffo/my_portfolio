@@ -89,11 +89,15 @@ Footer
 .footer{background: #333; padding: 30px; color: #fff; margin-top: 40px;}
 
 .footer__content{display: table;  width: 100%;}
+.footer__content__text{display: table-cell;}
 .footer__content__social{ display: table-cell; vertical-align:middle; padding: 0 20px;}
 .footer__content__social i{color: #fff; font-size: 30px;}
 
+.social__link{padding: 10px;}
 
-.instagram i:hover{color: #d23878}
+.instagram i:hover{color: #E1306C}
+.github i:hover{color: #6cc644;}
+.telegram i:hover{color: #2AABEE;}
 
 
 /*--------------------------
