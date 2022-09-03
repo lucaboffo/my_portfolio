@@ -143,6 +143,11 @@ Smartphone
 
   .banner__image,
   .banner__copy{width: 100%; height: 50%;}
+
+  /*Footer*/
+  .footer__content__text{display: table-row;}
+  .footer__content__social{display: table-row;}
+  .footer__content__social a{position: relative; float: left;}
 }
 
 .clearfix:after {
